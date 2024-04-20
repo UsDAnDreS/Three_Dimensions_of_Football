@@ -22,7 +22,7 @@ library(tidyverse)
 #                              first.play.text.no.pen, first.play.text.with.pen,
 #                              last.play.text.no.pen, last.play.text.with.pen))
 
-load(file="pbp_cleaned_w_EPA_with_FG_2014.Robj")
+load(file="R_Object_Files/pbp_cleaned_w_EPA_with_FG_2014.Robj")
 # load(paste0("/home/andrey/Documents/Work/New_College/Research/Play_by_Play_Complementary_Football_Project/pbp_2014_on_campus_data.Robj"))
 
 View(pbp_by_drive %>%

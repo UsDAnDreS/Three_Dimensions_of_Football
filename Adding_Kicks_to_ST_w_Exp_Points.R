@@ -7,7 +7,7 @@ for (year in 2017){
   
   print(paste0("Year: ", year))
   
-  load(file=paste0("pbp_UPDATED_w_EPA_Off_Def_ST_", year,".Robj"))
+  load(file=paste0("R_Object_Files/pbp_UPDATED_w_EPA_Off_Def_ST_", year,".Robj"))
   
   pbp_by_drive
   sort(unique(pbp_by_drive$play_type))
@@ -1029,8 +1029,8 @@ for (year in 2017){
   
   
   
-  save(pbp_by_drive, file=paste0("pbp_cleaned_w_EPA_with_FG_", year,".Robj"))
-  save(pbp_by_drive_full, file=paste0("pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year,".Robj"))
+  save(pbp_by_drive, file=paste0("R_Object_Files/pbp_cleaned_w_EPA_with_FG_", year,".Robj"))
+  save(pbp_by_drive_full, file=paste0("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year,".Robj"))
   
 }
 

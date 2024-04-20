@@ -11,7 +11,7 @@ library(tidyverse)
 
 # all.unique.teams <- NULL
 
-load("major_team_names.Robj")
+load("R_Object_Files/major_team_names.Robj")
 
 
 # for (year in 2014:2020){
@@ -21,7 +21,7 @@ load("major_team_names.Robj")
 #   
 #   
 #   
-#   load(file=paste0(c("pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
+#   load(file=paste0(c("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
 #   
 #   
 #   # all.unique.teams <- c(all.unique.teams, 
@@ -41,8 +41,8 @@ load("major_team_names.Robj")
 
 #for (year in 2014:2020){
 year <- 2014
-  # load(file=paste0(c("pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
-load(file=paste0(c("pbp_by_drive_w_EPA_Off_Def_ST_FG_ep_before_focused_", year, ".Robj", sep=""), collapse=""))
+  # load(file=paste0(c("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
+load(file=paste0(c("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_FG_ep_before_focused_", year, ".Robj", sep=""), collapse=""))
   
 #   ####
 #   ## CHECKING "ep_before" for FIRST KICKOFF of the game

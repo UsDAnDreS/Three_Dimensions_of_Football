@@ -13,7 +13,7 @@ for (year in 2014:2020){
   
   print(paste0("Year: ", year))
   
-  load(file=paste0("pbp_cleaned_", year,".Robj"))
+  load(file=paste0("R_Object_Files/pbp_cleaned_", year,".Robj"))
   
   
   pbp <- pbp_by_drive
@@ -1255,6 +1255,6 @@ for (year in 2014:2020){
   cat("\n")
   cat("\n")
   
-  save(pbp_by_drive, file=paste0("pbp_by_drive_UPDATED_ROUGHING_KICKER_", year,".Robj"))
+  save(pbp_by_drive, file=paste0("R_Object_Files/pbp_by_drive_UPDATED_ROUGHING_KICKER_", year,".Robj"))
   
 }

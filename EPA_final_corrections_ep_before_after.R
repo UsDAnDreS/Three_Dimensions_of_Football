@@ -11,7 +11,7 @@ library(tidyverse)
 for (year in 2014:2020){
   
 #year <- 2014
-load(file=paste0(c("pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
+load(file=paste0(c("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_with_FG_", year, ".Robj", sep=""), collapse=""))
 
 pbp_by_drive_full[which(pbp_by_drive_full$drive_result_detailed == "End of Half"), ]$ep_after <- 0
 pbp_by_drive_full[which(pbp_by_drive_full$drive_result_detailed == "End of Half"), ]$EPA.diff <- -pbp_by_drive_full[which(pbp_by_drive_full$drive_result_detailed == "End of Half"), ]$ep_before
@@ -42,7 +42,7 @@ View(pbp_by_drive_full[sort(c(our.ind, our.ind+1)), ] %>%
               last.play.text.no.pen, last.play.text.with.pen))
 
 save(pbp_by_drive_full,
-          file=paste0("pbp_by_drive_w_EPA_Off_Def_ST_FG_ep_before_focused_", year, ".Robj"))
+          file=paste0("R_Object_Files/pbp_by_drive_w_EPA_Off_Def_ST_FG_ep_before_focused_", year, ".Robj"))
 
 # table(pbp_by_drive_full$drive_result_detailed[pbp_by_drive_full$ep_after == 0])
 
@@ -55,7 +55,7 @@ save(pbp_by_drive_full,
 #####
 
 #year <- 2014
-load(file=paste0(c("pbp_by_drive_UPDATED_w_EPA_Off_Def_", year, ".Robj", sep=""), collapse=""))
+load(file=paste0(c("R_Object_Files/pbp_by_drive_UPDATED_w_EPA_Off_Def_", year, ".Robj", sep=""), collapse=""))
 
 pbp_by_drive$side <- ifelse(pbp_by_drive$home == pbp_by_drive$pos_team,
                             "Offense",
